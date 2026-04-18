@@ -14,3 +14,6 @@ Developed an understanding of attacker techniques and common detection patterns
 
 This experience laid the groundwork for my transition into building a fully independent SOC lab, where I now apply these same principles using enterprise tools such as Microsoft Defender and Microsoft Sentinel.
 ![Before Defender](../images/Before%20Defender.jpg)
+
+
+I took tremedous pride in my short ticket times as well as 100% accuracy in identifing true positives and false positives. And took that confidence into Sentinel and Defender.
