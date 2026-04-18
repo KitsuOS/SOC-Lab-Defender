@@ -7,3 +7,5 @@ Initially, I planned to continue working through a medium-severity incident invo
 Taking that advice, I pivoted my attention to the alerts involving John Smith. Given the number of incidents associated with this account and their elevated severity, it was clear that this investigation would require a more thorough and deliberate approach.
 
 At this point, I knew I was stepping into something more complex—and I was ready to see where it led.
+
+![Brute Force Incident](../images/Brute%20Force%20Incident.png)
