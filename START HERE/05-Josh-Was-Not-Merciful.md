@@ -33,7 +33,7 @@ Using KQL, I began correlating events tied to both the user and the associated I
 The attacker had successfully established email forwarding rules on the compromised account. Emails received by John Smith were being automatically forwarded to an external address, while the original messages were being deleted from the inbox.
 
 This technique is commonly used by threat actors to quietly monitor communications and extract sensitive information without alerting the user. At this point, the investigation had clearly moved beyond attempted access and into active account compromise and data exfiltration.
-At this stage of the investigation, one detail stood out—I was unable to locate clear log evidence of a successful login event tied to the attacker. Given the observed post-compromise behavior, particularly the unauthorized email forwarding rules, this created an inconsistency that required further consideration.
+At this stage of the investigation, another detail stood out—I was unable to locate clear log evidence of a successful login event tied to the attacker. Given the observed post-compromise behavior, particularly the unauthorized email forwarding rules, this created an inconsistency that required further consideration.
 
 Initially, this raised questions about how access had been established without a clearly identifiable authentication event. Rather than drawing unsupported conclusions, I treated this as a limitation in available telemetry or logging visibility. It is possible that certain authentication events were not captured within the scope of the lab environment, or that the activity fell outside the data sources being monitored.
 
