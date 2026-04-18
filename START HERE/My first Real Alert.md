@@ -28,4 +28,4 @@ Based on this analysis, I determined the alert to be benign, likely representing
 
 Below is the incident report I created, which represents my first fully documented investigation completed with guidance from a SOC analyst.
 
-[View First Incident Report](../incidents/first%20incident%20report.txt)
+[View First Incident Report](../incidents/first%20incident%20report.md)
