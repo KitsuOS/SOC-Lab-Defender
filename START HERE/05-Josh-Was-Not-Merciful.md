@@ -40,3 +40,12 @@ Initially, this raised questions about how access had been established without a
 While alternative access methods such as session hijacking or token-based authentication can sometimes result in limited traditional login logs, I did not have sufficient evidence within the available data to confirm a specific technique. Instead, I focused on the confirmed indicators—post-compromise account activity and unauthorized configuration changes—which were sufficient to support a determination of account compromise.
 
 This moment reinforced an important lesson: investigations do not always provide complete visibility, and it is critical to base conclusions on verified evidence while acknowledging gaps in telemetry.
+
+At this point in the investigation, I had gathered sufficient evidence to make a determination across the related alerts. The activity observed—including the brute force attempts and subsequent email-based actions—indicated that these incidents were not isolated events, but rather part of a single, connected attack sequence.
+
+With that in mind, I consolidated the related alerts into one primary incident, centered around the brute force attack, which appeared to be the initial point of compromise and the trigger for the subsequent activity. Treating these alerts as a unified incident allowed for a clearer understanding of the attack timeline and overall impact.
+ ![Merged Incidents](../images/merged-incidents.png)
+From there, I transitioned into documenting my findings and began drafting a formal incident report.
+
+Below is the report I produced. Any bolded sections or additional notes reflect feedback, questions, or revised phrasing provided by Josh during the review process, which helped refine both the accuracy and clarity of my analysis.
+ [Brute Force Incident – John Smith](../incidents/brute%20force%20incident%20john%20smith.md)
