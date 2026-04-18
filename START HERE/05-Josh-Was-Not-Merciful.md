@@ -18,3 +18,17 @@ To validate this, I pivoted to external intelligence sources and began conductin
 Further analysis revealed that the IP was being routed through a Tor exit node, indicating an attempt to anonymize the origin of the traffic. This is a common tactic used by threat actors to obscure their identity and evade detection.
 
 At this point, the combination of geolocation, reputation data, and anonymization techniques strongly suggested that the activity was malicious in nature, and the investigation began to shift from validation to confirmation and impact assessment.
+
+
+From there, I kept the alert details open and pivoted into Advanced Hunting to begin a deeper investigation using KQL.
+
+
+In the initial alert view, I had already identified that the environment was experiencing a brute force attack, with over 18 failed login attempts within a short time frame. This alone was concerning, but I wanted to determine whether the activity had progressed beyond failed access attempts.
+
+As I continued reviewing related incidents on the main dashboard, I noticed something important—there was also an email-related alert tied to the same user account, john.smith. This suggested that the activity might not be isolated and could indicate a broader compromise.
+
+Using KQL, I began correlating events tied to both the user and the associated IP address. As I worked through the data—filtering results and drilling into specific activities—I uncovered behavior that confirmed my suspicion.
+
+The attacker had successfully established email forwarding rules on the compromised account. Emails received by John Smith were being automatically forwarded to an external address, while the original messages were being deleted from the inbox.
+
+This technique is commonly used by threat actors to quietly monitor communications and extract sensitive information without alerting the user. At this point, the investigation had clearly moved beyond attempted access and into active account compromise and data exfiltration.
