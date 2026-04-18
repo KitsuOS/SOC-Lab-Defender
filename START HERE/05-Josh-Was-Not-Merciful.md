@@ -29,6 +29,7 @@ As I continued reviewing related incidents on the main dashboard, I noticed some
 
 Using KQL, I began correlating events tied to both the user and the associated IP address. As I worked through the data—filtering results and drilling into specific activities—I uncovered behavior that confirmed my suspicion.
 
+![Email Forwarding](../images/Email%20Forwarding.png)
 The attacker had successfully established email forwarding rules on the compromised account. Emails received by John Smith were being automatically forwarded to an external address, while the original messages were being deleted from the inbox.
 
 This technique is commonly used by threat actors to quietly monitor communications and extract sensitive information without alerting the user. At this point, the investigation had clearly moved beyond attempted access and into active account compromise and data exfiltration.
