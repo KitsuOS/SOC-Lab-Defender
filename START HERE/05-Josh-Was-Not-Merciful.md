@@ -44,7 +44,8 @@ This moment reinforced an important lesson: investigations do not always provide
 At this point in the investigation, I had gathered sufficient evidence to make a determination across the related alerts. The activity observed—including the brute force attempts and subsequent email-based actions—indicated that these incidents were not isolated events, but rather part of a single, connected attack sequence.
 
 With that in mind, I consolidated the related alerts into one primary incident, centered around the brute force attack, which appeared to be the initial point of compromise and the trigger for the subsequent activity. Treating these alerts as a unified incident allowed for a clearer understanding of the attack timeline and overall impact.
- ![Merged Incidents](../images/merged-incidents.png)
+
+![Merged Incidents](../images/Merged%20Incidents.png)
 From there, I transitioned into documenting my findings and began drafting a formal incident report.
 
 Below is the report I produced. Any bolded sections or additional notes reflect feedback, questions, or revised phrasing provided by Josh during the review process, which helped refine both the accuracy and clarity of my analysis.
