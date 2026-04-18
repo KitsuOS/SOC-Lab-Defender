@@ -9,3 +9,12 @@ Taking that advice, I pivoted my attention to the alerts involving John Smith. G
 At this point, I knew I was stepping into something more complex—and I was ready to see where it led.
 
 ![Brute Force Incident](../images/Brute%20Force%20Incident.png)
+
+
+The first detail that immediately stood out during my investigation was the geolocation of the source IP address, which was identified as originating from Russia within the alert details. While geolocation alone is not enough to determine malicious intent, it served as a strong indicator that warranted further investigation.
+
+To validate this, I pivoted to external intelligence sources and began conducting OSINT analysis on the IP address. Using IP Abuse DB, I queried the address and found that it had been reported over one thousand times for malicious activity. This significantly increased the confidence that the activity was not benign.
+
+Further analysis revealed that the IP was being routed through a Tor exit node, indicating an attempt to anonymize the origin of the traffic. This is a common tactic used by threat actors to obscure their identity and evade detection.
+
+At this point, the combination of geolocation, reputation data, and anonymization techniques strongly suggested that the activity was malicious in nature, and the investigation began to shift from validation to confirmation and impact assessment.
